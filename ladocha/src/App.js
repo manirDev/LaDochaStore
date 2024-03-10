@@ -5,6 +5,7 @@ import Home from "./pages/admin/home/Home"
 import Products from "./pages/admin/products/Products"
 import Users from "./pages/admin/users/Users"
 import Login from "./pages/admin/login/Login"
+import AddProduct from "./pages/admin/addproduct/AddProduct";
 
 function App() {
 
@@ -25,6 +26,10 @@ function App() {
         {
           path: "/products",
           element: <Products />
+        },
+        {
+          path: "/products/addProduct",
+          element: <AddProduct />
         },
         {
           path: "/users/:id",

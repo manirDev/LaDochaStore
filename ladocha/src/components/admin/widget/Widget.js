@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Widget.css"
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -89,8 +90,12 @@ function Widget({ type }) {
             </div>
             <div className="widget__right">
                 <div className="widget__percentage widget__positive">
-                    <KeyboardArrowUpIcon />
-                    {diff}%
+                    {diff < 0 ?
+                        <KeyboardArrowDownIcon style={{color:"tomato"}} />
+                    :
+                        <KeyboardArrowUpIcon  style={{color:"limegreen"}} />
+                    }  
+                    <span style={{color: diff < 0 ? "tomato" : "limegreen"}}>{diff}%</span>
                 </div>
                 {data.icon}
             </div>

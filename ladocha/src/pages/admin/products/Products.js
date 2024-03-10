@@ -3,13 +3,16 @@ import './Products.css'
 import { Link } from 'react-router-dom'
 import DataTable from '../../../components/admin/dataTable/DataTable'
 import { productColumns, productRows } from './productDataSource'
+import AddIcon from '@mui/icons-material/Add';
+
 function Products() {
   return (
     <div className='products'>
       <div className="products__container">
         <div className="datatableTitle">
           Add New Product
-          <Link to="/products/addUser" className="link">
+          <Link to="/products/addProduct" className="productAdd__link">
+            <AddIcon />
             Add New
           </Link>
         </div>

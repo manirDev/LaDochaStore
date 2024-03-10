@@ -7,9 +7,14 @@
     flex: 6;
     padding: 20px;
 }
-.link{
+.productAdd__link{
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    padding: 10px;
     text-decoration: none;
-    color: green;
+    background-color: #64A1FF;
+    color: white;
     font-size: 16px;
     font-weight: 400;
     border: 1px solid green;

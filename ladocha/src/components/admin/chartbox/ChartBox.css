@@ -1,0 +1,64 @@
+.chartBox{
+    display: flex;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    height: 200px;
+    
+}
+.boxInfo{
+    /* flex: 3; */
+}
+.boxInfo,
+.chartInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+}
+.boxInfo .title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+}
+.boxInfo .title > span{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+}
+.chartBox__link{
+    width: max-content;
+    font-size: 12px;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+}
+.chartBox .number{
+    font-size: 28px;
+    font-weight: 300;
+}
+.chartInfo{
+    flex : 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chartInfo .chartBox_chart{
+    width: 100%;
+    height: 100%;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.percentage{
+    font-weight: bold;
+    font-size: 20px;
+}
+.duration{
+    font-size: 14px;;
+}
