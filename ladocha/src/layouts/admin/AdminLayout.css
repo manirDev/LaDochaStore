@@ -1,0 +1,10 @@
+.adminLayout{
+    display: flex;
+}
+.adminLaout__container{
+    flex: 6;
+}
+
+.adminLayout__contentContainer{
+    
+}
