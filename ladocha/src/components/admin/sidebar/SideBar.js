@@ -2,8 +2,15 @@ import React from 'react'
 import './SideBar.css'
 import { menuData } from './menuData'
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { setLightMode, setDarkMode } from '../../../redux/admin/actions/ThemeActions'
+
 
 function SideBar() {
+
+  const {darkMode} = useSelector((state) => state.adminDarkMode.darkMode)
+  const darkModeDispatch = useDispatch();
+
   return (
     <div className='sidebar'>
       {/* Sidebar top */}
@@ -32,8 +39,8 @@ function SideBar() {
       </div>
       {/* Sidebar bottom */}
       <div className="sidebar__bottom">
-        <div className="sidebar__colorOption"></div>
-        <div className="sidebar__colorOption"></div>
+        <div className="sidebar__colorOption" onClick={() => darkModeDispatch(setLightMode())}></div>
+        <div className="sidebar__colorOption" onClick={() => darkModeDispatch(setDarkMode())}></div>
         <div className="sidebar__colorOption"></div>
       </div>
     </div>

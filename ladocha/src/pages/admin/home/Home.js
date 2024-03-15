@@ -12,6 +12,9 @@ import {chartBoxConversion, chartBoxUser, chartBoxProduct, chartBoxRevenue } fro
 function Home() {
   return (
     <div className='home'>
+      <div className="adminLayout__banner">
+        fff
+      </div>
       <div className="home__widgets">
         <Widget type={"user"} />
         <Widget type={"order"} />

@@ -1,0 +1,75 @@
+.dark{
+    background-color: #2a3446;
+    color: rgb(156, 156, 156);
+}
+.dark .chart__grid{
+    stroke: rgb(156, 156, 156);
+}
+.dark .transactionTable .table{
+    background-color: #3a475f;
+}
+.dark .transactionTable .tableCell{
+    color: gray;
+}
+
+.dark .navbar{
+    background-color: #2a3446;
+    color: rgb(156, 156, 156);
+    border-color: #969494;
+}
+.dark .navbar__search{
+    background-color: #2a3446;
+    border-color: gray;
+}
+.dark .sidebar{
+    border-color: #969494;
+}
+.dark .sidebar__logo{
+    color: gray;
+}
+.dark .sidebar hr{
+    border-color: #969494;
+}
+.dark .sidebar__icon{
+    font-size: 18px;
+    color: gray;
+}
+.dark .sidebar__item:hover{
+    background-color: #484e75;
+}
+.dark .chart,
+.dark .chartBox,
+.dark .widget {
+    box-shadow: 2px 4px 10px 1px rgba(91, 91, 91, 0.47);
+    background-color: #3a475f;
+}
+.dark .dataTable{
+    color: gray !important;
+}
+.dark .dataTable .datagrid{
+    background-color: #3a475f;
+    color: gray;
+    border: none;
+
+}
+.dark .active {
+    background-color: #484e75;
+    color: #dfe2f1;
+  }
+  .dark .pending {
+    background-color: #484e75;
+    color: goldenrod;
+  }
+  .dark .passive {
+    background-color: #484e75;
+    color: crimson;
+  }
+
+  .dark .productAdd__link,
+  .dark .usersAdd__link{
+    background-color: #484e75;
+  }
+  
+ .dark .sidebar__colorOption::nth-child(1){
+    background-color: whitesmoke;
+}

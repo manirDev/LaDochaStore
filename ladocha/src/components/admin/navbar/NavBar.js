@@ -8,8 +8,16 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 import NavbarItem from './NavbarItem.js';
+import { useDispatch, useSelector } from 'react-redux';
+import { setToggle } from '../../../redux/admin/actions/ThemeActions.js';
 
 function NavBar() {
+
+  const {darkMode} = useSelector((state) => state.adminDarkMode.darkMode)
+  const darkModeDispatch = useDispatch();
+  const handleThemeToggle = () => {
+    darkModeDispatch(setToggle())
+  }
   return (
     <div className='navbar'>
       <div className="navbar__wrapper">
@@ -22,7 +30,7 @@ function NavBar() {
         {/* Left */}
         <div className="navbar__items">
           <NavbarItem Icon={LanguageOutlinedIcon} text={"English"} />
-          <NavbarItem Icon={DarkModeOutlinedIcon}  />
+          <NavbarItem Icon={DarkModeOutlinedIcon} themeToggle={handleThemeToggle} />
           <NavbarItem Icon={FullscreenExitOutlinedIcon}  />
           <NavbarItem Icon={NotificationsNoneOutlinedIcon} counter={"1"} />
           <NavbarItem Icon={ChatBubbleOutlineOutlinedIcon} counter={"2"}  />

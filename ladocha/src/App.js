@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {createBrowserRouter, RouterProvider, Route, Link, Outlet} from "react-router-dom";
 import AdminLayout from "./layouts/admin/AdminLayout";
 import Home from "./pages/admin/home/Home"
@@ -6,8 +6,14 @@ import Products from "./pages/admin/products/Products"
 import Users from "./pages/admin/users/Users"
 import Login from "./pages/admin/login/Login"
 import AddProduct from "./pages/admin/addproduct/AddProduct";
+import { useSelector } from "react-redux";
+
+
 
 function App() {
+
+  const {darkMode} = useSelector((state) => state.adminDarkMode)
+
 
 
   const router = createBrowserRouter([
@@ -48,7 +54,7 @@ function App() {
   ])
 
   return (
-    <div className="app">
+    <div className={darkMode ? "app dark" : "app"}>
       <RouterProvider router={router} />
     </div>
   );

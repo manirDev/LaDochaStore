@@ -10,6 +10,7 @@ function AdminLayout() {
   return (
     <div className='adminLayout'>
       <SideBar />
+      
       <div className="adminLaout__container">
         <NavBar />
         <div className="adminLayout__contentContainer">
