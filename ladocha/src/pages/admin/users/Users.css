@@ -4,30 +4,8 @@
 }
 
 .users__container {
-    flex: 6;
-    padding: 20px;
-}
-.usersAdd__link{
-    display: flex;
-    justify-content: content;
-    align-items: center;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #64A1FF;
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
-    border: 1px solid green;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-.datatableTitle{
+    transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     width: 100%;
-    font-size: 24px;
-    color: gray;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
 }
+

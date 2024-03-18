@@ -5,18 +5,22 @@ import Featured from '../../../components/admin/featured/Featured'
 import Chart from '../../../components/admin/chart/Chart'
 import TransactionTable from '../../../components/admin/transactions/TransactionTable'
 import ChartBox from '../../../components/admin/chartbox/ChartBox'
-import {chartBoxConversion, chartBoxUser, chartBoxProduct, chartBoxRevenue } from '../../../components/admin/chartbox/chartBoxDataSource'
+import { chartBoxConversion, chartBoxUser, chartBoxProduct, chartBoxRevenue } from '../../../components/admin/chartbox/chartBoxDataSource'
+import { Link } from 'react-router-dom'
+import PageBanner from '../../../components/admin/pagebanner/PageBanner'
+import TopWidget from '../../../components/admin/widget/TopWidget'
 
 
 
 function Home() {
   return (
     <div className='home'>
-      <div className="adminLayout__banner">
-        fff
-      </div>
+      {/* <PageBanner leftText={"Home"} LeftIcon={""} rightText={"Home"} RightIcon={""} slug={"/"} /> */}
+      {/* <div className="home__topWidget">
+        <TopWidget />
+      </div> */}
       <div className="home__widgets">
-        <Widget type={"user"} />
+        {/* <Widget type={"user"} /> */}
         <Widget type={"order"} />
         <Widget type={"earning"} />
         <Widget type={"balance"} />

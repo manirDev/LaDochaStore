@@ -1,18 +1,22 @@
-import React from 'react'
-import './SideBar.css'
-import { menuData } from './menuData'
-import { Link } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
-import { setLightMode, setDarkMode } from '../../../redux/admin/actions/ThemeActions'
+import React from 'react';
+import './SideBar.css';
+import { menuData } from './menuData';
+import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { setLightMode, setDarkMode } from '../../../redux/admin/actions/ThemeActions';
+import 'simplebar-react/dist/simplebar.min.css';
+import SimpleBar from 'simplebar-react';
+
 
 
 function SideBar() {
-
-  const {darkMode} = useSelector((state) => state.adminDarkMode.darkMode)
+  const { darkMode } = useSelector((state) => state.adminDarkMode.darkMode);
   const darkModeDispatch = useDispatch();
 
   return (
     <div className='sidebar'>
+    <SimpleBar >
+       
       {/* Sidebar top */}
       <div className="sidebar__top">
         <span className="sidebar__logo">LaDocha</span>
@@ -39,10 +43,11 @@ function SideBar() {
       </div>
       {/* Sidebar bottom */}
       <div className="sidebar__bottom">
-        <div className="sidebar__colorOption" onClick={() => darkModeDispatch(setLightMode())}></div>
+        <div className="sidebar__colorOption darkBg" onClick={() => darkModeDispatch(setLightMode())}></div>
         <div className="sidebar__colorOption" onClick={() => darkModeDispatch(setDarkMode())}></div>
-        <div className="sidebar__colorOption"></div>
+        <div className="sidebar__colorOption" onClick={() => darkModeDispatch(setDarkMode())}></div>
       </div>
+      </SimpleBar>
     </div>
   )
 }

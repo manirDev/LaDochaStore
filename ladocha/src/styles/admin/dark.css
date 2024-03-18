@@ -1,25 +1,26 @@
 .dark{
-    background-color: #2a3446;
+    background-color: #161c24;
     color: rgb(156, 156, 156);
 }
 .dark .chart__grid{
     stroke: rgb(156, 156, 156);
 }
 .dark .transactionTable .table{
-    background-color: #3a475f;
+    background-color: rgb(33, 43, 54)
 }
 .dark .transactionTable .tableCell{
     color: gray;
 }
 
 .dark .navbar{
-    background-color: #2a3446;
+    background-color: rgba(22, 28, 36, 0.8);
     color: rgb(156, 156, 156);
     border-color: #969494;
 }
 .dark .navbar__search{
-    background-color: #2a3446;
-    border-color: gray;
+    background-color: rgba(22, 28, 36, 0.8);
+    color: white;
+    border-color: 969494;
 }
 .dark .sidebar{
     border-color: #969494;
@@ -35,19 +36,23 @@
     color: gray;
 }
 .dark .sidebar__item:hover{
-    background-color: #484e75;
+    background-color: rgba(145, 158, 171, 0.08);
 }
 .dark .chart,
 .dark .chartBox,
 .dark .widget {
-    box-shadow: 2px 4px 10px 1px rgba(91, 91, 91, 0.47);
-    background-color: #3a475f;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px 0px, rgba(0, 0, 0, 0.12) 0px 12px 24px -4px;
+    -webkit-box-align: center;
+    z-index: 0;
+    background-color: rgb(33, 43, 54)
 }
 .dark .dataTable{
     color: gray !important;
 }
 .dark .dataTable .datagrid{
-    background-color: #3a475f;
+    -webkit-box-align: center;
+    z-index: 0;
+    background-color: rgb(33, 43, 54);
     color: gray;
     border: none;
 
@@ -70,6 +75,6 @@
     background-color: #484e75;
   }
   
- .dark .sidebar__colorOption::nth-child(1){
+ .dark .darkBg{
     background-color: whitesmoke;
 }

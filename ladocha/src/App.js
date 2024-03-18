@@ -7,6 +7,7 @@ import Users from "./pages/admin/users/Users"
 import Login from "./pages/admin/login/Login"
 import AddProduct from "./pages/admin/addproduct/AddProduct";
 import { useSelector } from "react-redux";
+import SideBar from "./components/admin/sidebar/SideBar";
 
 
 
@@ -56,6 +57,7 @@ function App() {
   return (
     <div className={darkMode ? "app dark" : "app"}>
       <RouterProvider router={router} />
+      
     </div>
   );
 }

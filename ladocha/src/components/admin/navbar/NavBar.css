@@ -1,6 +1,6 @@
 
 .navbar{
-    position: sticky;
+    /* position: sticky;
     top: 0;
     z-index: 999;
     height: 50px;
@@ -11,8 +11,30 @@
     font-size: 14px;
     color: #555;
     background-color: #fff;
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
+
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0px;
+    left: auto;
+    right: 0px;
+    color: inherit;
+    box-shadow: none;
+    height: 80px;
+    z-index: 1101;
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    width: calc(100% - 281px);
+    padding-left: 24px;
+    padding-right: 24px;
+
 }
+
 .navbar__wrapper{
     width: 100%;
     padding: 20px;

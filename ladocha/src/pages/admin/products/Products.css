@@ -1,33 +1,9 @@
 .products {
     display: flex;
     width: 100%;
+    
 }
 
 .products__container {
-    flex: 6;
-    padding: 20px;
-}
-.productAdd__link{
-    display: flex;
-    justify-content: content;
-    align-items: center;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #64A1FF;
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
-    border: 1px solid green;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-.datatableTitle{
-    width: 100%;
-    font-size: 24px;
-    color: gray;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: calc(100% - 10px);
 }

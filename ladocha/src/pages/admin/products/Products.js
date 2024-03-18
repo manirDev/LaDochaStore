@@ -4,18 +4,13 @@ import { Link } from 'react-router-dom'
 import DataTable from '../../../components/admin/dataTable/DataTable'
 import { productColumns, productRows } from './productDataSource'
 import AddIcon from '@mui/icons-material/Add';
+import PageBanner from '../../../components/admin/pagebanner/PageBanner'
 
 function Products() {
   return (
     <div className='products'>
       <div className="products__container">
-        <div className="datatableTitle">
-          Add New Product
-          <Link to="/products/addProduct" className="productAdd__link">
-            <AddIcon />
-            Add New
-          </Link>
-        </div>
+        <PageBanner leftText={"Products List"} LeftIcon={""} rightText={"Add New"} RightIcon={AddIcon} slug={"/products/addProduct"} />
         <DataTable columns={productColumns} rows={productRows} slug="products" />
       </div>
     </div>
